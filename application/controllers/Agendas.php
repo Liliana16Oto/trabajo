@@ -29,7 +29,7 @@
               $datosNuevoAgenda=array(
                 "dia_ag"=>$this->input->post('dia_ag'),
                 "mes_ag"=>$this->input->post('mes_ag'),
-                "dia_ag"=>$this->input->post('dia_ag')
+                "año_ag"=>$this->input->post('año_ag')
               );
               if($this->Agenda->insertar($datosNuevoAgenda)){
               redirect ('agendas/listado');

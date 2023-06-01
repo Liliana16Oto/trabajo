@@ -4,7 +4,7 @@
   </div>
 </div>
 <form class=""
-action="<?php echo site_url(); ?>/clientes/guardar"
+action="<?php echo site_url(); ?>/agendas/guardar"
 method="post">
     <div class="row",; style="background-color: PeachPuff;">
       <div class="col-md-4">
@@ -45,11 +45,11 @@ method="post">
               Guardar
             </button>
             &nbsp;
-            <a href="<?php echo site_url(); ?>/clientes/listado"
+            <a href="<?php echo site_url(); ?>/agendas/listado"
               class="btn btn-danger">
               Cancelar
             </a>
         </div>
     </div>
 </form>
-<br><br><br><br><br>
+<br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br>

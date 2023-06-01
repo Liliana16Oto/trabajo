@@ -24,7 +24,7 @@ class Agenda extends CI_Model
   }
    //borrar instructores
     function borrar($id_ag){
-      $this->db->where("id_us",$id_ag);
+      $this->db->where("id_ag",$id_ag);
       return $this->db->delete("agenda");
     }
 }//no borrar cierre de la clase
