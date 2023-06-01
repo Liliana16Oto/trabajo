@@ -1,6 +1,6 @@
 <div class="row"; style="background-color: PeachPuff;">
   <div class="col-md-12 text-center">
-     <h1><b>NUEVO CLIENTE</b></h1>
+     <h1><b>NUEVA CITA</b></h1>
   </div>
 </div>
 <form class=""

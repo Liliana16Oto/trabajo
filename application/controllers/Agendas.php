@@ -12,7 +12,7 @@
     //funciones que reenderiza a vista index
     public function listado()
     {
-      $data['instructores']=$this->Agenda->obtenerTodos();
+      $data['agendas']=$this->Agenda->obtenerTodos();
 
       $this->load->view('header');
       $this->load->view('agendas/listado',$data);
@@ -26,21 +26,21 @@
       $this->load->view('footer');
     }
     public function guardar(){
-              $datosNuevoInstructor=array(
+              $datosNuevoAgenda=array(
                 "dia_ag"=>$this->input->post('dia_ag'),
                 "mes_ag"=>$this->input->post('mes_ag'),
                 "dia_ag"=>$this->input->post('dia_ag')
               );
-              if($this->Instructor->insertar($datosNuevoInstructor)){
-              redirect ('instructores/index');
+              if($this->Agenda->insertar($datosNuevoAgenda)){
+              redirect ('agendas/listado');
             }else {
               "<h1> ERROR AL INSERTAR</h1>";
         }
     }
       // funcion para eliminar instructores
-      public function eliminar($id_ins){
-        if ($this->Instructor->borrar($id_ins)){//invocando al modelo
-          redirect('instructores/index');
+      public function eliminar($id_ag){
+        if ($this->Agenda->borrar($id_ag)){//invocando al modelo
+          redirect('agendas/listado');
         } else {
           echo "ERROR AL BORRAR :(";
         }
