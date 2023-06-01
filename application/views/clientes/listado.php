@@ -12,9 +12,14 @@
 
     <br>
 <div class="row"; style="background-color: PeachPuff;">
-  <div class="col-md-12 text-center">
+  <div class="col-md-8 text-center">
      <h1><b>LISTADO DE CLIENTE</b></h1>
   </div>
+	<div class="col-md-4">
+      <br>
+      <br>
+      <a href="<?php echo site_url('clientes/nuevo'); ?>"class="btn btn-primary"> <i class="glyphicon glyphicon-plus"></i>Agregar Cliente</a>
+    </div>
 </div>
 <br>
 <?php if ($clientes): ?>
@@ -57,7 +62,7 @@
                  &nbsp; es para espacios-->
               <td class="text-center">
                   <a href="#" title="Editar Cliente"><i class="glyphicon glyphicon-pencil"> </i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="<?php echo site_url(); ?>/clientes/eliminar/<?php echo $filaTemporal->id_cli;?>" title="Eliminar Cliente"><i class="glyphicon glyphicon-trash"style="color:red"> </i></a>
+                  <a href="<?php echo site_url(); ?>/clientes/eliminar/<?php echo $filaTemporal->id_cli;?>" title="Eliminar Cliente" onclick="return confirm('¿Estas seguro de eliminar permanenteme el registro?');"><i class="glyphicon glyphicon-trash"style="color:red"> </i></a>
               </td>
             </tr>
 

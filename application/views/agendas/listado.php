@@ -12,9 +12,15 @@
 
     <br>
 <div class="row"; style="background-color: PeachPuff;">
-  <div class="col-md-12 text-center">
+  <div class="col-md-8 text-center">
      <h1>LISTADO DE CITAS</h1>
   </div>
+	<div class="col-md-4">
+			<br>
+			<br>
+			<a href="<?php echo site_url('agendas/nuevo'); ?>"class="btn btn-primary"> <i class="glyphicon glyphicon-plus"></i>Agregar Cita</a>
+		</div>
+</div>
 </div>
 <br>
 <?php if ($agendas): ?>
@@ -25,7 +31,7 @@
           <th>DÍA</th>
           <th> MES</th>
           <th>AÑO</th>
-
+          <th>ACCIONES</th>
         </tr>
       </thead>
 
@@ -42,7 +48,7 @@
                  &nbsp; es para espacios-->
               <td class="text-center">
                   <a href="#" title="Editar Agenda"><i class="glyphicon glyphicon-pencil"> </i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="<?php echo site_url(); ?>/agendas/eliminar/<?php echo $filaTemporal->id_ag;?>" title="Eliminar Agenda"><i class="glyphicon glyphicon-trash"style="color:red"> </i></a>
+                  <a href="<?php echo site_url(); ?>/agendas/eliminar/<?php echo $filaTemporal->id_ag;?>" title="Eliminar Agenda" onclick="return confirm('¿Estas seguro de eliminar permanenteme el registro?');"><i class="glyphicon glyphicon-trash"style="color:red"> </i></a>
               </td>
             </tr>
 
