@@ -1,3 +1,16 @@
+<div class="logo">
+	        <div class="col-md-4 text-left">
+	             <img src="<?php echo base_url();?>/assets/imagenes/pelu.png" alt="imagen logo" style="height:100px; width:100px;"
+      margin-left: 5px;>
+	    </div>
+	     </div>
+	       <div class="row", style="background-color:rgba(221, 91, 156, 0.753)">
+	               <div class=" col-md-6 text-center">
+	                 <h1 style="color:black; font-family:Ariel;"> ESTUDIO DE COLOR Y  CORTE </h1>
+	               </div>
+	      </div>
+
+    <br>
 <div class="row"; style="background-color: PeachPuff;">
   <div class="col-md-12 text-center">
      <h1><b>NUEVO COMENTARIO</b></h1>
@@ -48,7 +61,7 @@ method="post">
           id="correo_bu">
       </div>
       <div class="col-md-4">
-        <label for="">Direccion:</label>
+        <label for="">Comentario:</label>
         <br>
         <input type="text"
         placeholder="Ingrese el telefono"
@@ -57,6 +70,7 @@ method="post">
         id="telefono_bu">
       </div>
     </div>
+
 
     <br>
     <br>
@@ -74,4 +88,4 @@ method="post">
         </div>
     </div>
 </form>
-<br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
